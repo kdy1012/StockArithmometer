@@ -77,10 +77,11 @@
             android:text="1선 : "/>
 
         <TextView
+            android:textColor="#ea195b"
             android:id="@+id/onelineTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="숫자"/>
+            android:text=""/>
 
 
     </LinearLayout>
@@ -100,10 +101,11 @@
             android:text="2선 : "/>
 
         <TextView
+            android:textColor="#ea195b"
             android:id="@+id/secondlineTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="숫자"/>
+            android:text=""/>
 
     </LinearLayout>
 
@@ -122,10 +124,11 @@
             android:text="3선 : "/>
 
         <TextView
+            android:textColor="#ea195b"
             android:id="@+id/thirdlineTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="숫자"/>
+            android:text=""/>
 
     </LinearLayout>
 
@@ -144,10 +147,11 @@
             android:text="4선 : "/>
 
         <TextView
+            android:textColor="#ea195b"
             android:id="@+id/fourthlineTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="숫자"/>
+            android:text=""/>
 
     </LinearLayout>
 
@@ -166,10 +170,11 @@
             android:text="5선 : "/>
 
         <TextView
+            android:textColor="#ea195b"
             android:id="@+id/fifthlineTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="숫자"/>
+            android:text=""/>
 
     </LinearLayout>
 

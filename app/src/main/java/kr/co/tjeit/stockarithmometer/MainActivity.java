@@ -36,13 +36,22 @@ public class MainActivity extends AppCompatActivity {
                 int oneNum = Integer.parseInt(startNumEdt.getText().toString());
                 int twoNum = Integer.parseInt(endNumEdt.getText().toString());
 
-                int line3 = (oneNum + twoNum) / 2;
                 int x = oneNum - twoNum;
-                int y = x / 2;
-                int z = y / 2;
+                int centerLine = (oneNum + twoNum) / 2;
+                int aveNum = (oneNum - centerLine) / 2;
 
+                onelineTxt.setText(Integer.toString(oneNum));
 
-                thirdlineTxt.setText(line3);
+                int line2 = oneNum - aveNum;
+                secondlineTxt.setText(Integer.toString(line2));
+
+                thirdlineTxt.setText(Integer.toString(centerLine));
+
+                int line4 = centerLine - aveNum;
+                fourthlineTxt.setText(Integer.toString(line4));
+
+                int line5 = line4 - aveNum;
+                fifthlineTxt.setText(Integer.toString(twoNum));
 
             }
         });
