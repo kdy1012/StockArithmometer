@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private android.widget.EditText startNumEdt;
     private android.widget.EditText endNumEdt;
@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void setupEvents() {
+    public void setupEvents() {
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int oneNum = Integer.parseInt(startNumEdt.getText().toString());
                 int twoNum = Integer.parseInt(endNumEdt.getText().toString());
 
-                int x = oneNum - twoNum;
+                int x = twoNum - oneNum;
                 int centerLine = (oneNum + twoNum) / 2;
                 int aveNum = (oneNum - centerLine) / 2;
 
@@ -58,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void setValuse() {
+    public void setValuse() {
 
     }
 
-    private void bindViews() {
+    public void bindViews() {
         this.fifthlineTxt = (TextView) findViewById(R.id.fifthlineTxt);
         this.fourthlineTxt = (TextView) findViewById(R.id.fourthlineTxt);
         this.thirdlineTxt = (TextView) findViewById(R.id.thirdlineTxt);
